@@ -4,18 +4,23 @@ inputs:
     command1:
         description: 'The first command to run.'
         required: true
+        default: ''
     command2:
         description: 'The second command to run.'
         required: false
+        default: ''
     command3:
         description: 'The third command to run.'
         required: false
+        default: ''
     command4:
         description: 'The fourth command to run.'
         required: false
+        default: ''
     command5:
         description: 'The fifth command to run.'
         required: false
+        default: ''
   
 runs:
   using: 'docker'
