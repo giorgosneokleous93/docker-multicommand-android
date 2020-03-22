@@ -11,4 +11,4 @@ jobs:
     - uses: actions/checkout@v2
     - uses: ./
       with: 
-        command-1: sample-project/gradlew
+        command-1: 'sample-project/gradlew'
