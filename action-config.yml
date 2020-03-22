@@ -1,0 +1,28 @@
+name: 'Android Environment multi-command runner'
+description: 'A docker image that sets up a basic environment for building and running an android project.'
+inputs:
+    command-1:
+        description: 'The first command to run.'
+        required: true
+    command-2:
+        description: 'The second command to run.'
+        required: false
+    command-3:
+        description: 'The third command to run.'
+        required: false
+    command-4:
+        description: 'The fourth command to run.'
+        required: false
+    command-5:
+        description: 'The fifth command to run.'
+        required: false
+  
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.command-1 }}
+    - ${{ inputs.command-2 }}
+    - ${{ inputs.command-3 }}
+    - ${{ inputs.command-4 }}
+    - ${{ inputs.command-5 }}
