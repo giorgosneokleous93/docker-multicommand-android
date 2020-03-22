@@ -8,8 +8,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
-    - uses: ./
-      with: 
-        command1: 'Giorgos'
-        command2: 'Neokleous' 
+      - name: Check out 
+        uses: actions/checkout@v2
+      - name: "Multi-command runner"
+        uses: ./
+        id: Runner
+        with: 
+          command1: 'Giorgos'
+          command2: 'Neokleous' 
