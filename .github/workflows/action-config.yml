@@ -3,18 +3,12 @@ name: CI
 on: [push]
 
 jobs:
-  build:
-
+  testing_docker:
     runs-on: ubuntu-latest
-
     steps:
       - name: Check out 
-        uses: actions/checkout@v2
-        
+        uses: actions/checkout@v2 
       - name: "Multi-command runner"
         uses: ./
         with:
           who-to-greet: 'Mona the Octocat'
-      # Use the output from the `hello` step
-      - name: Get the output time
-        run: echo "The time was ${{ steps.hello.outputs.time }}"
