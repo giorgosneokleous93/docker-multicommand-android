@@ -11,4 +11,4 @@ jobs:
       - name: "Multi-command runner"
         uses: ./
         with:
-          who-to-greet: 'Mona the Octocat'
+          command1: 'sample-project/gradlew app:assembleDebug'
