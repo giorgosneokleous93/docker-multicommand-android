@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh -l
 set -e
 
 COMMAND_1=${1}
