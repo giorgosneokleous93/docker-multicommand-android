@@ -11,5 +11,5 @@ jobs:
     - uses: actions/checkout@v2
     - uses: ./
       with: 
-        command-1: 'Giorgos'
-        command-2: 'Neokleous' 
+        command1: 'Giorgos'
+        command2: 'Neokleous' 
