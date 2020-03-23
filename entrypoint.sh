@@ -1,5 +1,10 @@
 #!/bin/sh -l
 
+initialiseGradleWrapper(){
+    echo "Running './gradlew wrapper' to enable the Gradle Wrapper.."
+    ./gradlew wrapper
+}
+
 WORKING_DIR="${1}"
 COMMAND_1="${2}"
 COMMAND_2="${3}"
@@ -20,6 +25,8 @@ if [[ -z "$COMMAND_1" ]]; then
 fi;
 
 cd $WORKING_DIR
+
+initialiseGradleWrapper
 
 eval $COMMAND_1
 eval $COMMAND_2
