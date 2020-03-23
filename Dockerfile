@@ -12,7 +12,7 @@ ARG BUILD_TOOLS="build-tools;29.0.2"
 ARG ANDROID_VERSION="29"
 
 # Dependencies needed for building docker
-RUN apk add wget unzip openjdk8 gradle
+RUN apk add wget unzip openjdk8
 
 RUN mkdir -p ${ANDROID_DIR}/${CMD_DIR}
 RUN wget https://dl.google.com/android/repository/${ANDROID_CMD_TOOLS} -P ${DOWNLOAD_DIR}/ && \
