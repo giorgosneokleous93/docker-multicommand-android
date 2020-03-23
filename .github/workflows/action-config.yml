@@ -11,9 +11,9 @@ jobs:
       - name: "Multi-command runner"
         uses: ./
         with:
-          working-dir: '.'
-          command1: 'echo "Starting runner.."'
-          command2: 'app:assembleDebug'
-          command3: 'lint'
-          command4: 'test'
-          command5: 'echo "Finished"'
+          working-dir: 'sample-project'
+          command1: 'echo "...Starting..."'
+          command2: './gradlew app:assembleDebug'
+          command3: './gradlew lint'
+          command4: './gradlew test'
+          command5: 'echo "...Finished..."'
