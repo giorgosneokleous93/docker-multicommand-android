@@ -1,10 +1,11 @@
 #!/bin/sh -l
 
-COMMAND_1="${1}"
-COMMAND_2="${2}"
-COMMAND_3="${3}"
-COMMAND_4="${4}"
-COMMAND_5="${5}"
+WORKING_DIR="${1}"
+COMMAND_1="${2}"
+COMMAND_2="${3}"
+COMMAND_3="${4}"
+COMMAND_4="${5}"
+COMMAND_5="${6}"
 
 echo "Command 1: $COMMAND_1"
 echo "Command 2: $COMMAND_2"
@@ -16,6 +17,10 @@ if [ -z $COMMAND_1 ]; then
     echo "Please provide at least the first command"
     exit 1
 fi
+
+cd $WORKING_DIR
+
+ls -ls
 
 eval $COMMAND_1
 eval $COMMAND_2
