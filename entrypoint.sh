@@ -1,5 +1,7 @@
 #!/bin/sh -l
 
+set -e
+
 initialiseGradleWrapper(){
     echo "Running './gradlew wrapper' to enable the Gradle Wrapper.."
     ./gradlew wrapper
