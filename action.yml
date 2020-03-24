@@ -1,7 +1,7 @@
 name: 'Android Environment multi-command runner'
 description: 'A docker image that sets up a basic environment for building and running an android project.'
 inputs:
-    working-dir: 
+    workingdir: 
         description: "The working directory for the commands to execute."
         required: true
         default: '.'
@@ -30,7 +30,7 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args: 
-    - ${{ inputs.working-dir }}
+    - ${{ inputs.workingdir }}
     - ${{ inputs.command1 }}
     - ${{ inputs.command2 }}
     - ${{ inputs.command3 }}
