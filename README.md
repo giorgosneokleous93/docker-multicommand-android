@@ -37,10 +37,11 @@ uses: giorgosneokleous93/docker-multicommand-android@v1.0.0
 with:
   workingdir: 'sample-project'
   command1: 'echo "...Starting..."'
-  command2: 'app:assembleDebug'
-  command3: 'lint'
-  command4: 'test'
-  command4: 'echo "...Finished..."'
+  command2: './gradlew app:assembleDebug'
+  command3: './gradlew lint'
+  command4: './gradlew test'
+  command5: 'echo "...Finished..."'
+
 ```
 
 # Testing
