@@ -1,5 +1,9 @@
 name: 'Android Environment multi-command runner'
 description: 'A docker image that sets up a basic environment for building and running an android project.'
+author: 'Giorgos Neokleous'
+branding:
+    color: green
+    icon: package
 inputs:
     workingdir: 
         description: "The working directory for the commands to execute."
